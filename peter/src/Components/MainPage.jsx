@@ -1,6 +1,7 @@
 import React from 'react';
 import './MainPage.scss';
 import Headshot from '../Headshot.jpg';
+import {Carousel} from './Carousel';
 
 export default class MainPage extends React.Component {
     render() {
@@ -19,7 +20,7 @@ export default class MainPage extends React.Component {
                 <div className="card">
                     <div className="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
                         <h5 className="mb-0">
-                            <button className="theme-gradient font-weight-bold font-size-larger btn btn-link" data-toggle="collapse" data-target="#collapseOne">
+                            <button className="theme-gradient font-weight-bold font-size-larger btn btn-link accordion-button" data-toggle="collapse" data-target="#collapseOne">
                                 About Me
                             </button>
                         </h5>
@@ -34,14 +35,47 @@ export default class MainPage extends React.Component {
                 <div className="card">
                     <div className="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
                         <h5 className="mb-0">
-                            <button className="theme-gradient font-weight-bold btn btn-link" data-toggle="collapse" data-target="#collapseTwo">
+                            <button className="theme-gradient font-weight-bold btn btn-link accordion-button" data-toggle="collapse" data-target="#collapseTwo">
                                 Projects
                             </button>
                         </h5>
                     </div>
                     <div id="collapseTwo" className="collapse" data-parent="#accordion">
                         <div className="card-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Aliquet eget sit amet tellus cras adipiscing enim eu. Amet nisl purus in mollis nunc sed id semper. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar.
+                            <div className="row hidden-md-up">
+                                <div className="col-md-5">
+                                    <div className="card border border-secondary rounded">
+                                        <div className="card-block text-center px-2 py-1">
+                                            <h4 className="card-title mb-1">TravelGram</h4>
+                                            <h5 className="mb-1">
+                                                <span className="badge badge-pill badge-light mx-1">React</span>
+                                                <span className="badge badge-pill badge-light mx-1">HTML/CSS</span>
+                                                <span className="badge badge-pill badge-light mx-1">Javascript</span>
+                                                <span className="badge badge-pill badge-light mx-1">SQL</span>
+                                            </h5>
+                                            <p className="card-text p-y-1 mb-1">
+                                                A simple vacation sharing social website to document and discover new 
+                                                trips around the globe.
+                                            </p>
+                                            <a className="btn btn-light" href="https://github.com/petermking18" target="_blank">See on Github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-5">
+                                    <div className="card border border-secondary rounded">
+                                        <div className="card-block text-center px-2 py-1">
+                                            <h4 className="card-title mb-1">Algorithm Library</h4>
+                                            <h5 className="mb-1"><span className="badge badge-pill badge-light">C++</span></h5>
+                                            <p className="card-text p-y-1 mb-1">
+                                                A collection of sorting and searching algorithms easily accessed via strategy pattern.
+                                                Sort data. Search graphs. Find travelling salesman solutions with naive, dynamic programming, 
+                                                and metaheuristic techniques.
+                                            </p>
+                                            <a className="btn btn-light" href="https://github.com/petermking18" target="_blank">See on GitHub</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
