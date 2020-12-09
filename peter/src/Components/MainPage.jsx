@@ -72,7 +72,7 @@ export default class MainPage extends React.Component {
                                             <h4 className="card-title mb-1">Algorithm Library</h4>
                                             <h5 className="mb-1"><span className="badge badge-pill theme-gradient-badge">C++</span></h5>
                                             <p className="card-text p-y-1 mb-1">
-                                                A collection of sorting and searching algorithms easily accessed via strategy pattern.
+                                                A collection of sorting and searching algorithms.
                                                 Sort data. Search graphs. Find travelling salesman solutions with naive, dynamic programming,
                                                 and metaheuristic techniques.
                                             </p>
