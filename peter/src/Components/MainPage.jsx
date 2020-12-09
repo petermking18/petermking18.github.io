@@ -2,6 +2,7 @@ import React from 'react';
 import './MainPage.scss';
 import Headshot from '../Headshot.jpg';
 import { Carousel } from './Carousel';
+import ContactForm from './ContactForm';
 
 export default class MainPage extends React.Component {
     render() {
@@ -81,6 +82,17 @@ export default class MainPage extends React.Component {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card">
+                    <div className="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree">
+                        <h4 className="mb-0 ml-3 py-2 theme-gradient font-weight-bold">Contact Me</h4>
+                    </div>
+                    <div id="collapseThree" className="collapse" data-parent="#accordion">
+                        <div className="card-body">
+                            <ContactForm/>
                         </div>
                     </div>
                 </div>
