@@ -143,6 +143,12 @@
         }
     }
 
+    footer{
+        width: 100vw;
+        background-color: #1a1a1a;
+        height: 50px;
+    }
+
     @keyframes fadeInLeft{
         0%{
             transform: translateX(-100vw);

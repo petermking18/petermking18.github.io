@@ -7,8 +7,17 @@ export default class MainPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            contactSubmitted: false,
+            contactNeedsFields: false,
         }
+    }
+
+    contactSubmitted = () => {
+        this.setState({contactSubmitted: true});
+        this.setState({contactNeedsFields: false});
+    }
+    contactNeedsFields = () => {
+        this.setState({contactNeedsFields: true});
     }
 
     render() {
@@ -94,13 +103,19 @@ export default class MainPage extends React.Component {
                     </div>
                     <div id="collapseThree" className="collapse" data-parent="#accordion">
                         <div className="card-body">
-                            <ContactForm />
+                            {this.state.contactNeedsFields && 
+                            <p className="text-center">All fields required!</p>}
+                            {!this.state.contactSubmitted &&
+                            <ContactForm didSubmit={this.contactSubmitted} needFields={this.contactNeedsFields} />}
+                            {this.state.contactSubmitted && 
+                            <p className="text-center">Message sent!</p>}
                         </div>
                     </div>
                 </div>
 
 
             </div>
-        </div>
+
+        </div>//end return
     }
 }
