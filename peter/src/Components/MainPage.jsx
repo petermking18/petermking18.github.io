@@ -63,13 +63,13 @@ export default class MainPage extends React.Component {
                                 <div className="pcardwrapper">
                                     <a className="pcard text-center reg-a" href="https://github.com/petermking18/VacationGram" target="_blank">
                                         <h4 className="mb-1">TravelGram</h4>
-                                        <h5 className="mb-1">
+                                        <h5 className="mb-2">
                                             <span className="badge badge-pill theme-gradient-badge mx-1 my-1">React</span>
                                             <span className="badge badge-pill theme-gradient-badge mx-1 my-1">HTML/CSS</span>
                                             <span className="badge badge-pill theme-gradient-badge mx-1 my-1">Javascript</span>
                                             <span className="badge badge-pill theme-gradient-badge mx-1 my-1">SQL</span>
                                         </h5>
-                                        <p className="p-y-1 mb-1">
+                                        <p className="p-y-1 mb-2">
                                             A simple vacation sharing social website to document and discover new
                                             trips around the globe.
                                             </p>
