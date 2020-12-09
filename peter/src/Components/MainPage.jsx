@@ -16,14 +16,17 @@ export default class MainPage extends React.Component {
                     </div>
                 </div>
             </div>
-            <div className="container fadeInRight" id="accordion">
+
+
+            <div className="container fadeInRight mb-4" id="accordion">
                 <div className="card">
                     <div className="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
-                        <h5 className="mb-0">
-                            <button className="theme-gradient font-weight-bold font-size-larger btn btn-link accordion-button" data-toggle="collapse" data-target="#collapseOne">
+                        <h4 className="mb-0 ml-3 py-2 theme-gradient font-weight-bold">
+                            About Me
+                            {/* <button className="theme-gradient font-weight-bold font-size-larger btn btn-link accordion-button" data-toggle="collapse" data-target="#collapseOne">
                                 About Me
-                            </button>
-                        </h5>
+                            </button> */}
+                        </h4>
                     </div>
                     <div id="collapseOne" className="collapse show" data-parent="#accordion">
                         <div className="card-body">
@@ -32,18 +35,20 @@ export default class MainPage extends React.Component {
                         </div>
                     </div>
                 </div>
+                
                 <div className="card">
                     <div className="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
-                        <h5 className="mb-0">
-                            <button className="theme-gradient font-weight-bold btn btn-link accordion-button" data-toggle="collapse" data-target="#collapseTwo">
+                        <h4 className="mb-0 ml-3 py-2 theme-gradient font-weight-bold">
+                            Projects
+                            {/* <button className="theme-gradient font-weight-bold btn btn-link accordion-button" data-toggle="collapse" data-target="#collapseTwo">
                                 Projects
-                            </button>
-                        </h5>
+                            </button> */}
+                        </h4>
                     </div>
                     <div id="collapseTwo" className="collapse" data-parent="#accordion">
                         <div className="card-body">
                             <div className="row hidden-md-up">
-                                <div className="col-md-5">
+                                <div className="col-md-6 mb-2">
                                     <div className="card border border-secondary rounded">
                                         <div className="card-block text-center px-2 py-1">
                                             <h4 className="card-title mb-1">TravelGram</h4>
@@ -61,7 +66,7 @@ export default class MainPage extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-5">
+                                <div className="col-md-6">
                                     <div className="card border border-secondary rounded">
                                         <div className="card-block text-center px-2 py-1">
                                             <h4 className="card-title mb-1">Algorithm Library</h4>
