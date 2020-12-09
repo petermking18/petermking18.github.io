@@ -17,6 +17,18 @@
         border-radius: 10rem;
     }
 
+    @media only screen and (max-width: 600px){
+        #Headshot{
+            width: 100px;
+        }
+        h1{
+            font-size: 3rem !important;
+        }
+        .card-header h4{
+            font-size: 1.2rem;
+        }
+    }
+
     .fadeInLeft{
         animation: fadeInLeft .5s 1 0s ease-out;
         animation-fill-mode: forwards;
