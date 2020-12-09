@@ -1,7 +1,7 @@
 import React from 'react';
 import './MainPage.scss';
 import Headshot from '../Headshot.jpg';
-import {Carousel} from './Carousel';
+import { Carousel } from './Carousel';
 
 export default class MainPage extends React.Component {
     render() {
@@ -18,7 +18,7 @@ export default class MainPage extends React.Component {
             </div>
 
 
-            <div className="container fadeInRight mb-4" id="accordion">
+            <div className="container fadeInRight pb-4" id="accordion">
                 <div className="card">
                     <div className="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
                         <h4 className="mb-0 ml-3 py-2 theme-gradient font-weight-bold">
@@ -35,7 +35,7 @@ export default class MainPage extends React.Component {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="card">
                     <div className="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
                         <h4 className="mb-0 ml-3 py-2 theme-gradient font-weight-bold">
@@ -53,16 +53,16 @@ export default class MainPage extends React.Component {
                                         <div className="card-block text-center px-2 py-1">
                                             <h4 className="card-title mb-1">TravelGram</h4>
                                             <h5 className="mb-1">
-                                                <span className="badge badge-pill badge-light mx-1">React</span>
-                                                <span className="badge badge-pill badge-light mx-1">HTML/CSS</span>
-                                                <span className="badge badge-pill badge-light mx-1">Javascript</span>
-                                                <span className="badge badge-pill badge-light mx-1">SQL</span>
+                                                <span className="badge badge-pill theme-gradient-badge mx-1">React</span>
+                                                <span className="badge badge-pill theme-gradient-badge mx-1">HTML/CSS</span>
+                                                <span className="badge badge-pill theme-gradient-badge mx-1">Javascript</span>
+                                                <span className="badge badge-pill theme-gradient-badge mx-1">SQL</span>
                                             </h5>
                                             <p className="card-text p-y-1 mb-1">
-                                                A simple vacation sharing social website to document and discover new 
+                                                A simple vacation sharing social website to document and discover new
                                                 trips around the globe.
                                             </p>
-                                            <a className="btn btn-light" href="https://github.com/petermking18" target="_blank">See on Github</a>
+                                            <a className="btn btn-light" href="https://github.com/petermking18/VacationGram" target="_blank">See on Github</a>
                                         </div>
                                     </div>
                                 </div>
@@ -70,13 +70,13 @@ export default class MainPage extends React.Component {
                                     <div className="card border border-secondary rounded">
                                         <div className="card-block text-center px-2 py-1">
                                             <h4 className="card-title mb-1">Algorithm Library</h4>
-                                            <h5 className="mb-1"><span className="badge badge-pill badge-light">C++</span></h5>
+                                            <h5 className="mb-1"><span className="badge badge-pill theme-gradient-badge">C++</span></h5>
                                             <p className="card-text p-y-1 mb-1">
                                                 A collection of sorting and searching algorithms easily accessed via strategy pattern.
-                                                Sort data. Search graphs. Find travelling salesman solutions with naive, dynamic programming, 
+                                                Sort data. Search graphs. Find travelling salesman solutions with naive, dynamic programming,
                                                 and metaheuristic techniques.
                                             </p>
-                                            <a className="btn btn-light" href="https://github.com/petermking18" target="_blank">See on GitHub</a>
+                                            <a className="btn btn-light" href="https://github.com/petermking18/Algorithm-Library" target="_blank">See on GitHub</a>
                                         </div>
                                     </div>
                                 </div>
