@@ -16,6 +16,16 @@
         border-radius: 10rem;
     }
 
+    .fadeInLeft{
+        animation: fadeInLeft .5s 1 0s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    .fadeInRight{
+        animation: fadeInRight .5s 1 0s ease-out;
+        animation-fill-mode: forwards;
+    }
+
     h1{
         font-size: 4rem;
     }
@@ -37,10 +47,6 @@
         text-decoration: none;
     }
 
-    a{
-        color: white;
-    }
-
     .card{
         background-color: #1A1A1A;
     }
@@ -54,5 +60,26 @@
         -webkit-text-fill-color: transparent;
         display: inline-block;
         background-image: -webkit-linear-gradient(145deg, $second-color, $main-color);
+    }
+
+    @keyframes fadeInLeft{
+        0%{
+            transform: translateX(-100vw);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+    @keyframes fadeInRight{
+        0%{
+            transform: translateX(100vw);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
     }
 }

@@ -6,7 +6,7 @@ export default class MainPage extends React.Component {
     render() {
         return <div id="mainpage">
             <div className="container py-5">
-                <div className="row center-row">
+                <div className="row center-row fadeInLeft">
                     <img src={Headshot} alt="Headshot" id="Headshot" />
                     <div className="col">
                         <h1 className="theme-gradient font-weight-bold mb-0" id="Name">Peter King</h1>
@@ -15,7 +15,7 @@ export default class MainPage extends React.Component {
                     </div>
                 </div>
             </div>
-            <div className="container" id="accordion">
+            <div className="container fadeInRight" id="accordion">
                 <div className="card">
                     <div className="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne">
                         <h5 className="mb-0">
@@ -26,7 +26,8 @@ export default class MainPage extends React.Component {
                     </div>
                     <div id="collapseOne" className="collapse show" data-parent="#accordion">
                         <div className="card-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Aliquet eget sit amet tellus cras adipiscing enim eu. Amet nisl purus in mollis nunc sed id semper. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar.
+                            I'm a Computer Science student at Southern Methodist University in Dallas, TX.
+                            I am primarily focused on Software Engineering but have other interests as well...
                         </div>
                     </div>
                 </div>
