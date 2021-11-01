@@ -2,6 +2,7 @@ import React from 'react';
 import './MainPage.scss';
 import Headshot from '../Headshot.jpg';
 import ContactForm from './ContactForm';
+import Card from 'react-bootstrap/Card';
 
 export default class MainPage extends React.Component {
     constructor(props) {
@@ -60,6 +61,23 @@ export default class MainPage extends React.Component {
                     <div id="collapseTwo" className="collapse" data-parent="#accordion">
                         <div className="card-body">
                             <div className="d-flex flex-wrap justify-content-around">
+                                <div className="pcardwrapper">
+                                    <a className="pcard text-center reg-a pb-4" href='/'>
+                                        <h4 className="mb-1 py-2">RateMyBar</h4>
+                                        <h5 className="mb-2">
+                                            <span className="badge badge-pill theme-gradient-badge mx-1 my-1">Node</span>
+                                            <span className="badge badge-pill theme-gradient-badge mx-1 my-1">React</span>
+                                            <span className="badge badge-pill theme-gradient-badge mx-1 my-1">MySQL</span>
+                                            <span className="badge badge-pill theme-gradient-badge mx-1 my-1">Express</span>
+                                            <span className="badge badge-pill theme-gradient-badge mx-1 my-1">Docker</span>
+                                            <span className="badge badge-pill theme-gradient-badge mx-1 my-1">NGINX</span>
+                                        </h5>
+                                        <p className="p-y-1 mb-1 py-2">
+                                            A web app for rating and discovering bars in your area.
+                                        </p>
+                                        <a href="/" className="mt-2">See on GitHub</a>
+                                    </a>
+                                </div>
                                 <div className="pcardwrapper">
                                     <a className="pcard text-center reg-a" href="https://github.com/petermking18/VacationGram" target="_blank">
                                         <h4 className="mb-1">TravelGram</h4>
