@@ -75,7 +75,8 @@ export default class MainPage extends React.Component {
                                         <p className="p-y-1 mb-1 py-2">
                                             A web app for rating and discovering bars in your area.
                                         </p>
-                                        <a href="/" className="mt-2">See on GitHub</a>
+                                        <a href="https://www.ratemybar.app" className="mt-2">Visit Website</a>
+                                        <a href="https://apps.apple.com/US/app/id1595707496?mt=8" className="mt-2">App Store</a>
                                     </a>
                                 </div>
                                 <div className="pcardwrapper">
