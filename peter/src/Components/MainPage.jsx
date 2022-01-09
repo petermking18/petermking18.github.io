@@ -80,14 +80,9 @@ export default class MainPage extends React.Component {
                                         <p className="p-y-1 mb-1 py-0">
                                             A social app for rating and discovering bars in your area.
                                         </p>
-<<<<<<< HEAD
                                         <a href="https://www.ratemybar.app" target="_blank" rel='noreferrer' className="mt-2">Visit Website</a>
                                         <br/>
                                         <a href="https://apps.apple.com/US/app/id1595707496?mt=8" target="_blank" rel="noreferrer" className="mt-2">App Store</a>
-=======
-                                        <a href="https://www.ratemybar.app" className="mt-2">Visit Website</a>
-                                        <a href="https://apps.apple.com/US/app/id1595707496?mt=8" className="mt-2">App Store</a>
->>>>>>> 3c061ef4e1645de84efe04d5a36b83c31e8c0aa9
                                     </a>
                                 </div>
                                 <div className="pcardwrapper">
