@@ -1,188 +1,211 @@
-#mainpage{
-    // $main-color: #f81f01;
-    // $second-color: #ee076e;
-    $main-color: rgb(46, 119, 255);
-    $second-color: rgb(114, 184, 250);
-    // $second-color: #1F70F5;
-    $third-color: #83aeff;
-    
-    background-color: #111111;
+#mainpage {
+  // $main-color: #f81f01;
+  // $second-color: #ee076e;
+  $main-color: rgb(46, 119, 255);
+  $second-color: rgb(114, 184, 250);
+  // $second-color: #1F70F5;
+  $third-color: #83aeff;
+
+  background-color: #111111;
+  color: white;
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+
+  #Headshot {
+    width: 175px;
+    border-radius: 10rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #Headshot {
+      width: 100px;
+    }
+    h1 {
+      font-size: 3rem !important;
+    }
+    .card-header h4 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .fadeInLeft {
+    animation: fadeInLeft 0.5s 1 0s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .fadeInRight {
+    animation: fadeInRight 0.5s 1 0s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .card-header {
+    padding: 5px;
+  }
+  .accordion-button {
+    font-size: 1.5rem;
+  }
+  .card-header h4 {
+    font-size: 1.75rem;
+  }
+
+  lead {
+    font-size: 1.5rem;
+  }
+  .center-row {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  h2 a {
     color: white;
-    height: 100%;
-    min-height: 100vh;
+    text-decoration: none;
+  }
+
+  .card {
+    background-color: #1a1a1a;
+  }
+  .card-header:hover {
+    background-color: #2c2c2c;
+    cursor: pointer;
+  }
+
+  .no-decoration,
+  .no-decoration:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .pcardwrapper {
+    background-image: -webkit-linear-gradient(
+      145deg,
+      $second-color,
+      $main-color
+    );
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+    position: relative;
+    border-radius: 0.3rem;
+  }
+  .pcardwrapper:hover {
+    animation: popOut 0.05s 1 0s linear;
+    animation-fill-mode: forwards;
+  }
+  .pcard {
+    background-color: #1a1a1a;
+    width: 98.5%;
+    height: 98.5%;
+    position: absolute;
+    top: 0.75%;
+    left: 0.75%;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 0.25rem;
+  }
+  .pcard:hover {
+    cursor: pointer;
+  }
+
+  .reg-a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .theme-gradient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    background-image: -webkit-linear-gradient(
+      145deg,
+      $second-color,
+      $main-color
+    );
+  }
+  .theme-gradient-badge {
+    background-image: -webkit-linear-gradient(
+      145deg,
+      $second-color,
+      $main-color
+    );
+  }
+  .border-wrap {
+    background-image: -webkit-linear-gradient(
+      145deg,
+      $second-color,
+      $main-color
+    );
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+  .row.hidden-md-up {
+    display: flex;
+    align-items: center;
+  }
+
+  #contactForm {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    #submitButton {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  footer {
     width: 100vw;
+    background-color: #1a1a1a;
+    height: 50px;
+  }
 
-    #Headshot{
-        width: 175px;
-        border-radius: 10rem;
+  @keyframes fadeInLeft {
+    0% {
+      transform: translateX(-100vw);
+      opacity: 0;
     }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInRight {
+    0% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
 
-    @media only screen and (max-width: 600px){
-        #Headshot{
-            width: 100px;
-        }
-        h1{
-            font-size: 3rem !important;
-        }
-        .card-header h4{
-            font-size: 1.2rem;
-        }
+  @keyframes popOut {
+    from {
+      transform: scale(1);
     }
-
-    .fadeInLeft{
-        animation: fadeInLeft .5s 1 0s ease-out;
-        animation-fill-mode: forwards;
+    to {
+      transform: scale(1.035);
     }
-
-    .fadeInRight{
-        animation: fadeInRight .5s 1 0s ease-out;
-        animation-fill-mode: forwards;
-    }
-
-    h1{
-        font-size: 4rem;
-    }
-
-    .card-header{
-        padding: 5px;
-    }
-    .accordion-button{
-        font-size: 1.5rem;
-    }
-    .card-header h4{
-        font-size: 1.75rem;
-    }
-
-    lead{
-        font-size: 1.5rem;
-    }
-    .center-row{
-        display: flex;
-        align-items: center;
-    }
-
-    ul{
-        list-style: none;
-    }
-
-    h2 a{
-        color: white;
-        text-decoration: none;
-    }
-
-    .card{
-        background-color: #1A1A1A;
-    }
-    .card-header:hover{
-        background-color: #2c2c2c;
-        cursor: pointer;
-    }
-    
-    .pcardwrapper{
-        background-image: -webkit-linear-gradient(145deg, $second-color, $main-color);
-        width: 250px;
-        height: 250px;
-        margin-bottom: 1rem;
-        position: relative;
-        border-radius: .3rem;
-    }
-    .pcardwrapper:hover{
-        animation: popOut 0.05s 1 0s linear;
-        animation-fill-mode: forwards;
-    }
-    .pcard{
-        background-color: #1a1a1a;
-        width: 98.5%;
-        height: 98.5%;
-        position: absolute;
-        top: 0.75%;
-        left: 0.75%;
-        padding: 1rem;
-        padding-top: 0.5rem;
-        border-radius: .25rem;
-    }
-    .pcard:hover{
-        cursor: pointer;
-    }
-
-    .reg-a{
-        color: white;
-        text-decoration: none;
-    }
-
-    .theme-gradient{
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: inline-block;
-        background-image: -webkit-linear-gradient(145deg, $second-color, $main-color);
-    }
-    .theme-gradient-badge{
-        background-image: -webkit-linear-gradient(145deg, $second-color, $main-color);
-    }
-    .border-wrap{
-        background-image: -webkit-linear-gradient(145deg, $second-color, $main-color);
-        display: flex;
-        align-items: center;
-        border-radius: .5rem;
-    }
-    .row.hidden-md-up{
-        display: flex;
-        align-items: center;
-    }
-
-    #contactForm{
-        max-width: 600px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        
-        #submitButton{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    footer{
-        width: 100vw;
-        background-color: #1a1a1a;
-        height: 50px;
-    }
-
-    @keyframes fadeInLeft{
-        0%{
-            transform: translateX(-100vw);
-            opacity: 0;
-        }
-        100%{
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-    @keyframes fadeInRight{
-        0%{
-            transform: translateX(100vw);
-            opacity: 0;
-        }
-        100%{
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-
-    @keyframes popOut{
-        from{
-            transform: scale(1);
-        }
-        to{
-            transform: scale(1.035);
-        }
-    }
+  }
 }
 
-@media only screen and (max-width: 700px){
-    .cond-break{//works in rows in between cols
-        width: 100%;
-        height: 1rem;
-    }
+@media only screen and (max-width: 700px) {
+  .cond-break {
+    //works in rows in between cols
+    width: 100%;
+    height: 1rem;
+  }
 }

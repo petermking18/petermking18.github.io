@@ -2,7 +2,6 @@ import React from 'react';
 import './MainPage.scss';
 import Headshot from '../Headshot.jpg';
 import ContactForm from './ContactForm';
-import Card from 'react-bootstrap/Card';
 
 export default class MainPage extends React.Component {
     constructor(props) {
@@ -30,6 +29,12 @@ export default class MainPage extends React.Component {
                         <h1 className="theme-gradient font-weight-bold mb-0" id="Name">Peter King</h1>
                         <br />
                         <lead className="lead">Software Developer</lead>
+                        <br/>
+                        <lead className="lead">
+                            <a role="button" href="https://github.com/petermking18" target="_blank" rel="noreferrer" className="badge badge-pill theme-gradient-badge no-decoration mr-2"><span className="fa fa-github mr-1"></span>Github</a>
+                            <a role="button" href="https://www.linkedin.com/in/peter-king-9254b2174/" target="_blank" rel="noreferrer" className="badge badge-pill theme-gradient-badge no-decoration mr-2"><span className="fa fa-linkedin-square mr-1"></span>Linkedin</a>
+                            <a role="button" href="/resume.pdf" target="_blank" rel="noreferrer" className="badge badge-pill theme-gradient-badge no-decoration"><span className="fa fa-file-pdf-o mr-1"></span>Resume</a>
+                        </lead>
                     </div>
                 </div>
             </div>
@@ -48,8 +53,8 @@ export default class MainPage extends React.Component {
                     <div id="collapseOne" className="collapse show" data-parent="#accordion">
                         <div className="card-body">
                             I'm a Computer Science student at Southern Methodist University in Dallas, TX.
-                            I'm primarily focused on Software Development and have experience in C++, React JS, HTML, CSS,
-                            Python, and more. Click the Projects tab below to see what I've been working on.
+                            I'm primarily focused on Software Development and have experience in C++, React JS, React Native, HTML, CSS,
+                            Python, and more. I work part time as a software developer at a company in Dallas during the school year. Click the Projects tab below to see what I've been working on.
                         </div>
                     </div>
                 </div>
@@ -62,8 +67,8 @@ export default class MainPage extends React.Component {
                         <div className="card-body">
                             <div className="d-flex flex-wrap justify-content-around">
                                 <div className="pcardwrapper">
-                                    <a className="pcard text-center reg-a pb-4" href='/'>
-                                        <h4 className="mb-1 py-2">RateMyBar</h4>
+                                    <a className="pcard text-center reg-a pb-4" href='https://apps.apple.com/US/app/id1595707496?mt=8' target='_blank' rel="noreferrer">
+                                        <h4 className="mb-1 py-0">RateMyBar</h4>
                                         <h5 className="mb-2">
                                             <span className="badge badge-pill theme-gradient-badge mx-1 my-1">Node</span>
                                             <span className="badge badge-pill theme-gradient-badge mx-1 my-1">React</span>
@@ -72,11 +77,12 @@ export default class MainPage extends React.Component {
                                             <span className="badge badge-pill theme-gradient-badge mx-1 my-1">Docker</span>
                                             <span className="badge badge-pill theme-gradient-badge mx-1 my-1">NGINX</span>
                                         </h5>
-                                        <p className="p-y-1 mb-1 py-2">
-                                            A web app for rating and discovering bars in your area.
+                                        <p className="p-y-1 mb-1 py-0">
+                                            A social app for rating and discovering bars in your area.
                                         </p>
-                                        <a href="https://www.ratemybar.app" className="mt-2">Visit Website</a>
-                                        <a href="https://apps.apple.com/US/app/id1595707496?mt=8" className="mt-2">App Store</a>
+                                        <a href="https://www.ratemybar.app" target="_blank" rel='noreferrer' className="mt-2">Visit Website</a>
+                                        <br/>
+                                        <a href="https://apps.apple.com/US/app/id1595707496?mt=8" target="_blank" rel="noreferrer" className="mt-2">App Store</a>
                                     </a>
                                 </div>
                                 <div className="pcardwrapper">
